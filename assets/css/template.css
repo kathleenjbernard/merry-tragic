@@ -430,7 +430,7 @@ pre {
 
 .pb-number-box,
 .progress-title {
-    color: #828282;
+    color: white;
 }
 
 /*------------------------------------------------------------------
@@ -1397,12 +1397,12 @@ button {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 400;
-    border-bottom: 5px solid #202020;
 }
 
 .header.header-small {
     background-color: #28B6C3;
     box-shadow: 0 0 1px rgba(0, 0, 0, .07);
+    border-bottom: 5px solid #2d2d2d;
 }
 
 .header.header-shadow {
@@ -1515,7 +1515,7 @@ button {
 
 .header .inner-nav > ul > li > a:hover,
 .header .inner-nav > ul > li > a:focus {
-    color: #FC000D;
+    color: #E3E8E8;
 }
 
 .header .inner-nav > ul > li.sub-menu-open > a {
@@ -1536,7 +1536,7 @@ button {
 
 .header-light .inner-nav > ul > li > a:hover,
 .header-light .inner-nav > ul > li > a:focus {
-    color: black;
+    color: red;
 }
 
 .header-light .inner-nav > ul > li.sub-menu-open > a {
@@ -1555,14 +1555,12 @@ button {
     color: black;
 }
 
-.header.header-small .inner-nav > ul > li > a:hover,
+.header.header-small .inner-nav > ul > li > a:hover {
+    color: #E3E8E8;
+}
 .header.header-small .inner-nav > ul > li > a:focus,
 .header.header-small .inner-nav > ul > li > a.active {
-    color: #FC000D;
-}
-
-.header.header-small .inner-nav > ul > li.sub-menu-open > a {
-    color: #FC000D;
+    color:  #E3E8E8;
 }
 
 /*------------------------------------------------------------------
