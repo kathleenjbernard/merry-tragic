@@ -445,6 +445,8 @@ pre {
     margin-top: 60px;
     padding-top: 20px;
     background-color: #EAE7Ef;
+    background-size: cover;
+    border: 5px solid #202020;
 
 }
 
@@ -1365,7 +1367,7 @@ button {
 }
 
 /*------------------------------------------------------------------
-[Header & Navigation]
+[Header & Navigation Bookmark]
 */
 
 .header {
@@ -1711,9 +1713,10 @@ button {
 
 @media (max-width: 991px) {
     .header {
-        background-color: #fff;
+        background-color: #28B6C3;
         padding: 0;
     }
+
 
     .header .container,
     .header .container-fluid {
@@ -1987,7 +1990,7 @@ button {
 }
 
 .module-page-title .page-title-subheading {
-    color: #bdbdbd;
+    color: #202020; 
     padding: 0;
     margin: 0;
 }
@@ -2287,8 +2290,8 @@ button {
     z-index: 0;
 }
 
-.bg-dark-30:before {
-    background: rgba(0, 0, 0, .3);
+.bg-dark-30:before { /**background color for heading on single portfolio page**/
+    background: #202020;
     content: "";
     left: 0;
     top: 0;
@@ -2309,14 +2312,14 @@ button {
 }
 
 .bg-light-30:before {
-    background: rgba(255, 255, 255, .3);
+    background: pink;
     content: "";
     left: 0;
     top: 0;
 }
 
 .bg-light-60:before {
-    background: rgba(255, 255, 255, .6);
+    background: yellow;
     content: "";
     left: 0;
     top: 0;
@@ -2410,8 +2413,6 @@ button {
     float: left;
     width: 100%;
     margin-bottom: -1px;
-    border-top: 5px solid #202020;
-    border-right: 5px solid #202020;
 }
 
 .portfolio-item .portfolio-img-wrap {
@@ -2429,6 +2430,8 @@ button {
 .portfolio-wrapper {
     position: relative;
     overflow: hidden;
+    border: 5px solid #202020;
+    margin: 3px;
 }
 
 .portfolio-wrapper .portfolio-img-wrap {
@@ -2653,7 +2656,7 @@ a[rel~="gallery"]:hover {
             transform: translateY(0);
 }
 
-@media (max-width: 991px) {
+/**@media (max-width: 991px) {
     .gallery-item {
         width: 50%;
     }
@@ -2668,7 +2671,7 @@ a[rel~="gallery"]:hover {
     .gallery-columns-9 .gallery-item {
         width: 50%;
     }
-}
+} **/
 
 @media (max-width: 767px) {
     .gallery-item {
@@ -3011,13 +3014,13 @@ a[rel~="gallery"]:hover {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #000;
+    background: #202020;
     padding: 30px 0;
     color: #f1f1f1;
 }
 
 .footer a {
-    color: #28B6C3;
+    color: white;
 }
 
 .footer a:hover,
