@@ -37,7 +37,7 @@ body {
 }
 
 #profile { /**intro**/
-    background-color: #28B6C3;
+    background-color: #28B6C3; /*footer bylines*/
     background-image: url("../images/teal-comic-simple.png");
     background-size: cover;
     border-bottom: 5px solid #202020;
@@ -442,11 +442,10 @@ pre {
 }
 
 .form-container {
-    margin-top: 60px;
+    margin-top: 30px;
     padding-top: 20px;
-    background-color: #EAE7Ef;
+    background-color: transparent;
     background-size: cover;
-    border: 5px solid #202020;
 
 }
 
@@ -1636,7 +1635,6 @@ button {
     top: 50%;
     margin-top: -5px;
     font-family: 'themify';
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -2823,7 +2821,7 @@ a[rel~="gallery"]:hover {
 .widget ul li,
 .widget ol li {
     margin-bottom: 10px;
-    border-bottom: 1px dashed #eee;
+    border-bottom: 1px solid #2d2d2d;
     padding-bottom: 10px;
 }
 
@@ -3009,48 +3007,85 @@ a[rel~="gallery"]:hover {
 [Footer]
 */
 
-.footer {
+.footer,
+.footer-bottom {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #202020;
-    padding: 30px 0;
-    color: #f1f1f1;
+    background: #1a1a1a;
+    width: 100vw;
 }
 
-.footer a {
+.footer a,
+.footer-bottom a {
     color: white;
 }
 
 .footer a:hover,
-.footer a:focus {
-    opacity: .7;
+.footer a:focus,
+.footer-bottom a:hover,
+.footer-bottom a:focus {
+    color: white;
 }
 
-.footer .copyright, 
-.footer-links {
-    text-transform: uppercase;
-		letter-spacing: 1.5px;
-    font-size: 12px;
+.footer {
+    padding: 90px 0 40px;
+    color: white;
+}
+
+.footer h1,
+.footer .h1,
+.footer h2,
+.footer .h2,
+.footer h3,
+.footer .h3,
+.footer h4,
+.footer .h4,
+.footer h5,
+.footer .h5,
+.footer h6,
+.footer .h6 {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 15px 0;
+}
+
+.footer-bottom p,
+.footer-bottom ul {
     margin: 0;
 }
 
-
-
-.footer-copyright {
-    background: #000;
-    padding: 20px 0;
+.footer-bottom .widget {
+    margin: 10px 0;
+    border: 0;
 }
 
-.social-icons {
+.footer-bottom .social-icons {
     text-align: right;
-    margin: 5px 0 5px 5px;
+    padding: 0;
+    border-bottom: 0;
 }
 
-.footer-links {
-    text-align: center;
+.footer-bottom .social-icons > li > a {
+    margin: 0 20px 0 0;
+    opacity: 1;
+    color: #28B6C3;
 }
+
+.footer-bottom .social-icons > li > a:hover,
+.footer-bottom .social-icons > li > a:focus {
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .footer-bottom .widget,
+    .footer-bottom .social-icons {
+        text-align: center;
+    }
+}
+
+
 
 /*
 @media only screen and (min-width: 992px) {
