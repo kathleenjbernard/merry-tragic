@@ -2654,6 +2654,24 @@ a[rel~="gallery"]:hover {
             transform: translateY(0);
 }
 
+/*Single page gallery*/ 
+
+#nsfw-module img {
+    width: 100%;
+}
+#nsfw-module {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100vw;
+}
+
+
+
+.lone-item {
+    margin: 0;
+    padding: 0;
+}
+
 /**@media (max-width: 991px) {
     .gallery-item {
         width: 50%;
