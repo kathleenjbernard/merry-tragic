@@ -8,7 +8,7 @@ define('SMTP_PASSWORD', 'YOUR_PASSWORD'); // Password for SMTP authentication
 //define('SMTP_PORT', 25); // Port of the SMTP like to be 25, 80, 465 or 587
 
 // To address who will receive this email 
-$to = 'example@gmail.com';
+$to = 'kathleenjbernard@gmail.com';
 
 $security = new Security();
 

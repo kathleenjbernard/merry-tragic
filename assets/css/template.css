@@ -2295,6 +2295,8 @@ button {
     top: 0;
 }
 
+
+
 .bg-dark-60:before {
     background: rgba(0, 0, 0, .6);
     content: "";
@@ -2499,6 +2501,8 @@ button {
     opacity: 1;
 }
 
+
+
 @media (max-width: 1199px) {
     .row-portfolio .grid-sizer,
     .row-portfolio .portfolio-item,
@@ -2664,8 +2668,6 @@ a[rel~="gallery"]:hover {
     margin-right: 0;
     width: 100vw;
 }
-
-
 
 .lone-item {
     margin: 0;
