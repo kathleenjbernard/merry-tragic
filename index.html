@@ -71,16 +71,12 @@
 			</div>
 		</header>
 		<!-- Header end-->
-
-		<!-- Wrapper-->
-		<div class="wrapper">
-
 			<!-- Page Header-->
 			<section class="module-header full-height parallax bg-dark  text-left" id="home" data-background="assets/images/halftoneblack.png">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h3>Hi! I'm Merry Tragic,</h3>
+							<h3 id="header-byline">Hi! I'm Merry Tragic,</h3>
 							<h1 class="h1 m-b-15">Comic Book<br/> Illustrator</h1>
 							<h1 class="h6 m-b-60"><li class="hero-indicator">Currently Accepting New Projects</li></h1>
 							<p><a class="btn btn-brand" href="#contact"><span>Message Me</span></a></p>
@@ -103,7 +99,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-4">
-							<p><img src="assets/images/im.jpg" alt=""></p>
+							<p><img src="./assets/images/chris.jpg" alt="photo of a man's face with dark hair, beard, and black glasses" class="bio-photo"></p>
 						</div>
 						<div class="col-md-4">
 							<h5>About Me</h5>
@@ -112,7 +108,7 @@
 							<p></p>
 						</div>
 						<div class="col-md-4">
-							<h5>Common Client Requests</h5>
+							<h5>Common Requests</h5>
 							<div class="progress-item">
 								<div class="progress-title">Wedding Party Portraits</div>
 								<div class="progress">
@@ -414,34 +410,46 @@
 							<form 
 							id="contact-form" 
 							method="post" 
-							action="../Site/assets/php/send_mail.php" target="_blank"
-							novalidate>
+							action="bat/rd-mailform.php" 
+							novalidate
+							data-netlify="true"
+							name="contact">
 								<div class="row">
-									<div class="form-group col-sm-6">
+									<div class="col-sm-4">
 										<input 
 										class="form-control" 
 										type="text" 
 										name="name" 
 										placeholder="Name" 
+										data-constraints="@LettersOnly @NotEmpty"
 										required>
 										<p class="help-block text-danger">
 										</p>
 									</div>
-									<div class="form-group col-sm-6">
-										<input class="form-control" type="email" name="email" placeholder="E-mail" required>
+
+									<div class="col-sm-4">
+										<input class="form-control" type="email" name="email" placeholder="E-mail" data-constraints="@Email @NotEmpty" required>
 										<p class="help-block text-danger"></p>
 									</div>
-									<div class="form-group col-sm-12">
-										<textarea class="form-control" name="message" placeholder="Message" rows="8" required style="height: 184px; ;"></textarea>
+
+									<div class="col-sm-4">
+										<input class="form-control" type="text" name="phone" placeholder="Phone" data-constraints="@Phone" required>
+										<p class="help-block text-danger"></p>
 									</div>
-									<div class="form-group col-sm-12">
+
+									<div class="col-sm-12">
+										<textarea class="form-control" name="message" placeholder="What do you have in mind?" rows="8" data-constraints="@NotEmpty" required style="height: 184px;"></textarea>
+									</div>
+
+									<div class="col-sm-12">
 										<div class="text-center m-t-20">
 											<button class="btn btn-round btn-brand" type="submit"><span>Send Message</span></button>
 										</div>
 									</div>
+
 								</div>
 							</form>
-							<!-- Ajax response-->
+
 							<div class="ajax-response text-center" id="contact-response"></div>
 						</div>
 					</div>
@@ -452,19 +460,11 @@
 
 			<!-- FOOTER-->
             <footer class="footer">
-				<section>
 					<div class="container-fluid">
 						<div class="row">
 							<!-- WIDGET-->
-							<div class="col-md-3">
-								<div class="widget"><img src="assets/images/logo-light.png" alt=""><br/><br/>
-									<p>Merry Tragic</p>
-									<ul class="list-unstyled">
-										<li>Address</li>
-										<li>christopher@merrytragic.com</li>
-										<li>Phone: +88 (0) 101 1000 001</li>
-										
-									</ul>
+							<div class="col-sm-3 text-center">
+								<div class="widget"><img src="assets/images/logo-light.png" alt="" id="footer-logo">
 								</div>
 							</div>
 							<!-- END WIDGET-->
@@ -477,7 +477,6 @@
 										<li><a href="#portfolio">Portfolio</a></li>
 										<li><a href="#services">Services</a></li>
 										<li><a href="#services">Pricing</a></li>
-										<li><a href="#">Download Resume</a></li>
 										<li><a href="#contact">Send Message</a></li>
 										<li><a href="#">View NSFW</a></li>
 									</ul>
@@ -510,24 +509,19 @@
 							<!-- END WIDGET-->
 						</div>
 					</div>
-				</section>
 
-            <section class="footer-bottom" id="footer-bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="widget">
-                                <p>© 2020 <a href="katiej.net" target="_blank">By Katie J. Bernard</a>. All rights reserved.</p>
+                            <div>
+                                <p class="text-center">© 2020 <a href="katiej.net" target="_blank">By Katie J. Bernard</a>. All rights reserved.</p>
                             </div>
                         </div>
                         
                     </div>
 				</div>
-			</section>
         </footer>
-            <!-- END FOOTER-->
-		</div>
-		<!-- Wrapper end-->
+         <!-- END FOOTER-->
 
 		<!-- Scripts-->
 		<script src="assets/js/jquery-2.2.4.min.js"></script>
