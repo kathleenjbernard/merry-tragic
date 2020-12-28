@@ -260,7 +260,7 @@ h5 > a:focus,
 h6 > a:hover,
 h6 > a:focus,
 #header-byline {
-    color: #e41919;
+    color: #FC313B;
 }
 
 p,
@@ -423,7 +423,11 @@ pre {
 }
 
 .progress-bar.progress-bar-brand {
-    background-color: #e41919;
+    background-color: greenyellow;
+}
+
+.progress .icon {
+    color:greenyellow;
 }
 
 .pb-number-box {
@@ -1855,6 +1859,10 @@ button {
 [Hero]
 */
 
+h1 li {
+    list-style: none;
+}
+
 .module-header,
 .module-slides {
     text-align: center;
@@ -2081,6 +2089,11 @@ button {
 }
 
 @media (max-width: 568px) {
+
+    .hero-indicator {
+        display: none;
+    }
+
     .module-header h1.h1,
     .module-slides h1.h1 {
         font-size: 25.6px;
@@ -2583,18 +2596,27 @@ a[rel~="gallery"]:hover {
 
 /*Single page gallery*/ 
 
+#nsfw-module {
+    background-color: white;
+}
+
 #nsfw-module img {
     width: 100%;
-}
-#nsfw-module {
     margin-left: 0;
     margin-right: 0;
     width: 100vw;
 }
 
-.lone-item {
-    margin: 0;
-    padding: 0;
+#nsfw-module figcaption {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+#alt-color-back {
+    color: white;
 }
 
 /**@media (max-width: 991px) {
@@ -2970,7 +2992,9 @@ a[rel~="gallery"]:hover {
 }
 
 #footer-logo {
-    max-width: 200px;
+    display: flex;
+    justify-content: ;
+    max-width: 175px;
 }
 
 .footer h1,
