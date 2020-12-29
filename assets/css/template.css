@@ -2288,25 +2288,29 @@ h1 li {
     margin: 0 0 30px;
 }
 
-.filters > li {
+.filters > li,
+    #nsfw-link {
     display: inline-block;
     margin: 0 18px 10px 18px;
 }
 
-.filters > li a {
+.filters > li a,
+    #nsfw-link {
     color: #202020;
     color: #828282;
     opacity: .8;
 }
 
 .filters > li a:hover,
-.filters > li a.current {
+.filters > li a.current,
+#nsfw-link:hover {
     opacity: 1;
     color: #e41919;
 }
 
 @media (max-width: 767px) {
-    .filters > li {
+    .filters > li,
+    #nsfw-link {
         display: block;
     }
 }
