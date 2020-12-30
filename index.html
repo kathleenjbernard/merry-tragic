@@ -419,13 +419,14 @@
 					</div>
 					<div class="row form-container">
 						<div class="col-md-12">
+
 							<form 
-							id="contact-form" 
 							method="post" 
-							action="assets/bat/rd-mailform.php"
+							action="bat/rd-mailform.php"
 							class="mailform off2"
 							data-netlify="true"
-							name="contact">
+							name="contact"
+							id="contact-form">
 								<div class="row">
 									<div class="col-sm-4">
 										<input 
@@ -455,14 +456,13 @@
 
 									<div class="col-sm-12">
 										<div class="text-center m-t-20">
-											<button class="btn btn-round btn-brand" type="submit"><span>Send Message</span></button>
+											<button type="submit" 
+											class="btn btn-round btn-brand">Send Message</button>
 										</div>
 									</div>
 
 								</div>
 							</form>
-
-							<div class="ajax-response text-center" id="contact-response"></div>
 						</div>
 					</div>
 				</div>
