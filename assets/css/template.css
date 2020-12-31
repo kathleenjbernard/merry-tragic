@@ -716,6 +716,116 @@ button {
     color: #9b9b9b;
 }
 
+/*------------------------------------------------------------------
+[Pricing Tables]
+*/
+
+.pricing-byline {
+    color: black;
+    padding-top: 10px;
+}
+
+.pricing-wrapper {
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0 0 30px;
+    transition: .2s linear;
+}
+
+.pricing-wrapper.pricing-popular {
+    margin-top: -20px;
+}
+
+.pricing-wrapper:hover {
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, .07);
+}
+
+.pricing-header {
+    position: relative;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 30px 20px;
+}
+
+.pricing-header .pricing-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.pricing-popular .pricing-header {
+    padding: 50px 20px 30px;
+}
+
+.pricing-icon {
+    line-height: 1;
+    font-size: 40px;
+    color: #202020;
+    margin: 10px 0 20px;
+}
+
+.pricing-price-box {
+    padding: 30px 40px;
+}
+
+.pricing-price-box .pricing-price {
+    font-size: 72px;
+    margin: 0 0 0 -10px;
+}
+
+.pricing-price-box .pricing-price > span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-right: 2px;
+}
+
+.pricing-price-box hr {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.pricing-body {
+    padding: 0 0;
+}
+
+.pricing-features {
+    border-top: 1px solid #f2f2f2;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-features li {
+    border-bottom: 1px solid #f2f2f2;
+    color: #828282;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.pricing-footer {
+    padding: 20px 20px;
+}
+
+.pricing-popular .pricing-footer {
+    padding: 20px 20px 30px;
+}
+
+.pricing-wrapper .pricing-title,
+.pricing-wrapper .pricing-price {
+    color: #202020;
+}
+
+@media (max-width: 767px) {
+    .pricing-wrapper.pricing-popular {
+        margin-top: 0;
+    }
+}
+
+
+
 /* ------------------------------------------------------------------
 [What I Offer section]
 */
@@ -1912,6 +2022,7 @@ h1 li {
 
 .module-page-title {
     padding: 160px 0 0;
+    background-color: silver;
 }
 
 .module-page-title .page-title-heading {
@@ -1919,7 +2030,8 @@ h1 li {
 }
 
 .module-page-title .page-title-subheading {
-    color: #202020; 
+  
+    color: white;
     padding: 0;
     margin: 0;
 }
