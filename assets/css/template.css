@@ -446,6 +446,32 @@ pre {
     color: white;
 }
 
+.decorative-divider-purple {
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    background-image: url("../images/purple-comic-simple.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.decorative-divider-teal {
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    background-image: url("../images/teal-comic-simple.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.divider h2 {
+    color: white;
+}
+
+
+
 /*------------------------------------------------------------------
 [Let's Connect Form]
 */
@@ -457,7 +483,8 @@ pre {
 }
 
 #contact {
-    background-color: #A886D5;
+    background-color: #28B6C3;
+    background-color: #1a1a1a;   
 }
 
 .form-container {
@@ -726,7 +753,6 @@ button {
 }
 
 .pricing-wrapper {
-    background: #fff;
     border: 1px solid #f2f2f2;
     border-radius: 3px;
     text-align: center;
@@ -744,7 +770,7 @@ button {
 
 .pricing-header {
     position: relative;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid red;
     padding: 30px 20px;
 }
 
@@ -761,9 +787,12 @@ button {
 
 .pricing-icon {
     line-height: 1;
-    font-size: 40px;
     color: #202020;
     margin: 10px 0 20px;
+}
+
+.pricing-icon img {
+    height: 45px;
 }
 
 .pricing-price-box {
@@ -922,7 +951,7 @@ button {
 .pagination {
     text-align: center;
     display: block;
-    margin: 60px 0 0;
+    margin: 10px 0 0;
 }
 
 .pagination > li {
@@ -2021,12 +2050,16 @@ h1 li {
 }
 
 .module-page-title {
-    padding: 160px 0 0;
-    background-color: silver;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: black;
+    filter: opacity(70%);
+    width: 100vw;
 }
 
 .module-page-title .page-title-heading {
     margin: 0 0 10px;
+
 }
 
 .module-page-title .page-title-subheading {
@@ -3105,7 +3138,8 @@ a[rel~="gallery"]:hover {
 
 .footer {
     position: absolute;
-    background: #1a1a1a;
+
+    background: #1a1a1a; /*nicegray*/
     width: 100vw;
     padding: 90px 0 40px;
     color: white;
