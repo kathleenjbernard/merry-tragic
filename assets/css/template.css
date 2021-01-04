@@ -476,10 +476,16 @@ pre {
 [Let's Connect Form]
 */
 
-#contact i:hover {
+#contact i:hover,
+#submit-button:hover {
     text-shadow: 2px 2px 10px #bfacd8,
     -2px -2px 10px #b9a6d1;
     color: white;
+}
+
+#submit-button:hover {
+    box-shadow: 2px 2px 10px #bfacd8,
+    -2px -2px 10px #b9a6d1;
 }
 
 #contact {
@@ -509,6 +515,12 @@ pre {
 .form-control:focus {
     box-shadow: none;
     background: #d6e4e3;
+}
+
+.form-container #submit-button {
+    background-color: transparent;
+    border: 3px solid silver;
+    color: white;
 }
 
 .form-control-lg {
@@ -631,6 +643,7 @@ button {
 
 .btn.btn-brand:before {
     background: #e41919;
+
 }
 
 .btn.btn-brand.btn-outline {
@@ -770,14 +783,20 @@ button {
 
 .pricing-header {
     position: relative;
-    border-bottom: 1px solid red;
     padding: 30px 20px;
+    font-size: 12px;
+    min-height: 300px;
+}
+
+.pricing-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(29, 0, 53);
 }
 
 .pricing-header .pricing-title {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 12px;
     margin: 0;
 }
 
@@ -800,8 +819,14 @@ button {
 }
 
 .pricing-price-box .pricing-price {
-    font-size: 72px;
+    font-size: 60px;
     margin: 0 0 0 -10px;
+    text-align: center;
+}
+
+h6.starting-at {
+    font-size: 12px;
+    color: gray;
 }
 
 .pricing-price-box .pricing-price > span {
@@ -812,6 +837,10 @@ button {
     padding-right: 2px;
 }
 
+.pricing-price {
+    text-align: right;
+}
+
 .pricing-price-box hr {
     margin-top: 20px;
     margin-bottom: 0;
@@ -819,20 +848,35 @@ button {
 
 .pricing-body {
     padding: 0 0;
+    min-height: 310px;
 }
 
 .pricing-features {
+    display: flex;
+    flex-direction: column;
     border-top: 1px solid #f2f2f2;
-    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin: 0;
+   
 }
 
-.pricing-features li {
+.pricing-row {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
     border-bottom: 1px solid #f2f2f2;
     color: #828282;
     padding: 12px 0;
     margin: 0;
+    text-align: left;
+
 }
+
+.pricing-row.item {
+}
+
+
 
 .pricing-footer {
     padding: 20px 20px;
@@ -842,7 +886,7 @@ button {
     padding: 20px 20px 30px;
 }
 
-.pricing-wrapper .pricing-title,
+
 .pricing-wrapper .pricing-price {
     color: #202020;
 }
@@ -852,8 +896,6 @@ button {
         margin-top: 0;
     }
 }
-
-
 
 /* ------------------------------------------------------------------
 [What I Offer section]
@@ -2065,7 +2107,7 @@ h1 li {
 .module-page-title .page-title-subheading {
   
     color: white;
-    padding: 0;
+    padding-bottom: 10px;
     margin: 0;
 }
 
@@ -3157,8 +3199,9 @@ a[rel~="gallery"]:hover {
 }
 
 #footer-logo {
-    display: flex;
-    justify-content: ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 175px;
 }
 
