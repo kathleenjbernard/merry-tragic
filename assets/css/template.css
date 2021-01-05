@@ -477,7 +477,8 @@ pre {
 */
 
 #contact i:hover,
-#submit-button:hover {
+#submit-button:hover,
+.footer a:hover {
     text-shadow: 2px 2px 10px #bfacd8,
     -2px -2px 10px #b9a6d1;
     color: white;
@@ -873,11 +874,6 @@ h6.starting-at {
 
 }
 
-.pricing-row.item {
-}
-
-
-
 .pricing-footer {
     padding: 20px 20px;
 }
@@ -895,6 +891,30 @@ h6.starting-at {
     .pricing-wrapper.pricing-popular {
         margin-top: 0;
     }
+
+    .pricing-body,
+    .pricing-header {
+        min-height: 0;
+    }
+
+    .decorative-divider-purple {
+        height: auto;
+        text-align: center;
+    }
+    
+    .decorative-divider-teal {
+        height: auto;
+        text-align: center;
+    }
+
+    .module#pricing {
+        background-color: #A886D5;
+    }
+
+    .pricing-wrapper {
+        background-color: white;
+    }
+
 }
 
 /* ------------------------------------------------------------------
@@ -2187,6 +2207,10 @@ h1 li {
     font-size: 15px;
 }
 
+.mobile-hero-display #mobile-logo {
+    display: none;
+}
+
 @media (max-width: 992px) {
     .wrapper {
         padding-top: 80px;
@@ -2273,17 +2297,30 @@ h1 li {
     .module-slides p {
         font-size: 13.5px;
     }
+
+    .module-header { /**in progress**/
+        height: 100vh;
+        background-image: contain;
+    }
+
 }
 
 @media (max-width: 568px) {
 
-    .hero-indicator {
+    .hero-indicator,
+    .module-header h3 {
         display: none;
+    }
+
+    .module-header .btn {
+        display: block;
     }
 
     .module-header h1.h1,
     .module-slides h1.h1 {
         font-size: 25.6px;
+        text-align: center;
+        padding-top: 40px;
     }
 
     .module-header h1.h2,
@@ -2314,6 +2351,13 @@ h1 li {
     .module-header p,
     .module-slides p {
         font-size: 12px;
+    }
+
+    .mobile-hero-display #mobile-logo {
+        display: block;
+        width: 100%;
+        position: relative;
+        top: -20pt;
     }
 }
 
@@ -2526,6 +2570,21 @@ h1 li {
 .row-portfolio[data-columns="4"] .grid-sizer.large,
 .row-portfolio[data-columns="4"] .portfolio-item.large {
     width: 50%;
+}
+
+.portfolio.back-link-container {
+    text-align: center;
+}
+
+#back-link {
+    display: flex;
+    justify-content: center;
+}
+
+#back-link .back-link-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 /*------------------------------------------------------------------
@@ -2856,6 +2915,12 @@ a[rel~="gallery"]:hover {
     .gallery .gallery-caption {
         min-width: 50px;
         font-size: 20px;
+    }
+
+    #back-link .back-link-container {
+        padding-top: 25vh;
+        padding-bottom: 5vh;
+        text-transform: uppercase;
     }
 }
 

@@ -76,9 +76,13 @@
 		</header>
 		<!-- Header end-->
 			<!-- Page Header-->
-			<section class="module-header full-height parallax bg-dark  text-left" id="home" data-background="assets/images/halftoneblack.png">
+			<section class="module-header full-height parallax bg-dark text-left" id="home" data-background="assets/images/halftoneblack.png">
 				<div class="container">
 					<div class="row">
+						<div class="mobile-hero-display">
+							<img src="assets/images/logo-blocky.png" id="mobile-logo">
+						</div>
+
 						<div class="col-md-12">
 							<h3>Hi! I'm <span id="header-byline">Merry Tragic</span>,</h3>
 							<h1 class="h1 m-b-15">Comic Book<br/> Illustrator</h1>
@@ -102,7 +106,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-4 xs-hidden">
 							<p><img src="./assets/images/chris.jpg" alt="photo of a man's face with dark hair, beard, and black glasses" class="bio-photo"></p>
 						</div>
 						<div class="col-md-4">
@@ -354,6 +358,12 @@
 						</div>
 					</div>
 				</div>
+
+				<div id="back-link">
+						<div class="back-link-container">
+							<a href="index.html#portfolio" class="back-link">Back to Top</a>
+						</div>
+				</div>
 			</section>
 			<!-- Portfolio end--> 
 
@@ -379,7 +389,7 @@
 
 
 			<!-- Pricing Tables-->
-			<section class="module">
+			<section class="module" id="pricing">
 				<div class="container">
 					<div class="row">
 
@@ -435,8 +445,8 @@
 									</div> <!--end pricing features-->
 
 								</div> <!--end pricing body-->
-
-								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>
+								<!--
+								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>-->
 							</div>
 						</div>
 
@@ -488,7 +498,7 @@
 
 								</div> <!--end pricing body-->
 
-								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>
+								<!--<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>-->
 							</div>
 						</div>
 
@@ -500,7 +510,7 @@
 
 									<h6 class="pricing-title">Digital Art: Groomsmen Special</h6>
 									<div class="pricing-byline">Includes both a digital version and printed 11" x 17" artwork</div>
-									<div class="pricing-byline">Base price includes up to 6 humans and/or animals</div>
+									<div class="pricing-byline">Base price includes up to six commissioned figures</div>
 									
 								</div>
 								<div class="pricing-price-box">
@@ -545,8 +555,8 @@
 									</div> <!--end pricing features-->
 
 								</div> <!--end pricing body-->
-
-								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>
+								<!--
+								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>-->
 							</div>
 						</div>
 
@@ -603,8 +613,8 @@
 									</div> <!--end pricing features-->
 
 								</div> <!--end pricing body-->
-
-								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>
+								<!--
+								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>-->
 							</div>
 						</div>
 
@@ -651,8 +661,8 @@
 									</div> <!--end pricing features-->
 
 								</div> <!--end pricing body-->
-
-								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>
+								<!--
+								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>-->
 							</div>
 						</div>
 
@@ -670,8 +680,8 @@
 									<h5 class="pricing-price"><span>$</span>150
 									</h5>
 								</div>
-
-								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>
+								<!--
+								<div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#"><span>Select</span></a></div>-->
 							</div>
 						</div>
 
@@ -704,8 +714,6 @@
 			</section>
 				<!-- Decorative divider end-->
 
-			
-
 			<!-- Contact-->
 			<section class="module" id="contact">
 				<div class="container">
@@ -733,7 +741,8 @@
 							name="contact"
 							id="contact-form">
 								<div class="row">
-									<div class="col-sm-4">
+
+									<div class="col-sm-6">
 										<input 
 										class="form-control" 
 										type="text" 
@@ -745,12 +754,12 @@
 										</p>
 									</div>
 
-									<div class="col-sm-4">
+									<div class="col-sm-6">
 										<input class="form-control" type="email" name="email" placeholder="E-mail" data-constraints="@Email @NotEmpty" required>
 										<p class="help-block text-danger"></p>
 									</div>
 
-									<div class="col-sm-4">
+									<div class="col-sm-6">
 										<input class="form-control" type="text" name="phone" placeholder="Phone" data-constraints="@Phone" required>
 										<p class="help-block text-danger"></p>
 									</div>
@@ -805,8 +814,10 @@
 								<div class="widget widget-links">
 									<h5 class="widget-title">Other Info</h5>
 									<ul>
-										<li><a href="#">Redbubble Store</a></li>
-										<li><a href="#">Give Feedback</a></li>
+										<li><a href="#">Redbubble Store</a>
+										<div style="color: #28B6C3;">Coming Soon</div></li>
+										<li><a href="#">Leave Feedback</a>
+											<div style="color: #28B6C3;">Coming Soon</div></li>
 									</ul>
 								</div>
 							</div>
