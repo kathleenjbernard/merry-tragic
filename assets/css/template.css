@@ -788,7 +788,7 @@ button {
     position: relative;
     padding: 30px 20px;
     font-size: 12px;
-    min-height: 300px;
+    min-height: 350px;
 }
 
 .pricing-title {
@@ -851,7 +851,7 @@ h6.starting-at {
 
 .pricing-body {
     padding: 0 0;
-    min-height: 310px;
+    min-height: 270px;
 }
 
 .pricing-features {
