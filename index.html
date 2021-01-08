@@ -119,9 +119,9 @@
 
 							<p>Merry Tragic is an art brand owned and operated by Christopher Atkinson, freelance illustrator and long-time comic book superfan. Having filled a seemingly endless number of journals growing up, Chris fell in love with digital art in high school and things haven't been the same since!</p>
 
-							<p>Christopher resides near Seattle Washington with his wife and four cats, where he continues to grow Merry Tragic. He currently has 12,309 comic books in his personal collection.</p>
+							<p>Christopher resides near Seattle Washington with his wife and four cats, where he continues to grow Merry Tragic. He currently has 3,442 comic books in his personal collection.</p>
 
-							<p></p>
+						<p></p>
 						</div>
 						<div class="col-md-4">
 							<h5>Powers and Abilities</h5>
@@ -179,7 +179,6 @@
 								<li><a href="#" data-filter=".human">Humans</a></li>
 								<li><a href="#" data-filter=".humanish">Human-ish</a></li>
 								<li><a href="#" data-filter=".animal">Animals</a></li>
-								<li><a href="#" data-filter=".background">Textured Backgrounds</a></li>
 								<li><a href="#" data-filter=".political">Political</a></li>
 								<li><a href="#" data-filter=".sketch">Sketches</a></li>
 								<li><a href="#" data-filter=".adult">Adult</a></li>
@@ -962,51 +961,40 @@
 							</div>
 
 					</div>
-					<div class="row form-container">
+					<div class="row form-container"></div>
 						<div class="col-md-12">
 
 							<form 
 							method="post" 
-							action="bat/rd-mailform.php"
-							class="mailform off2"
-							data-netlify="true"
-							name="contact"
-							id="contact-form">
-								<div class="row">
+							action="bat/rd-mailform.php" 
+							action="pages/success.html" 
+							class="mailform off2" 
+							data-netlify="true" 
+							name="contact">
+								<div class="container">
+									<input type="hidden" name="form-type" value="contact">
 
-									<div class="col-sm-4">
-										<input 
-										class="form-control" 
-										type="text" 
-										name="name" 
-										placeholder="Name" 
-										data-constraints="@LettersOnly @NotEmpty"
-										required>
-										<p class="help-block text-danger">
-										</p>
+									<div class="row c-align">
+										<div class="col-md-12">
+										<input type="text" name="name" placeholder="Your Name" data-constraints="@LettersOnly @NotEmpty" required>
 									</div>
 
-									<div class="col-sm-4">
-										<input class="form-control" type="email" name="email" placeholder="E-mail" data-constraints="@Email @NotEmpty" required>
-										<p class="help-block text-danger"></p>
+									<div class="col-md-12">
+										<input type="text" name="email" placeholder="Email" data-constraints="@Email @NotEmpty" required>
 									</div>
 
-									<div class="col-sm-4">
-										<input class="form-control" type="text" name="phone" placeholder="Phone" data-constraints="@Phone" required>
-										<p class="help-block text-danger"></p>
+									<div class="col-md-12">
+										<input type="text" name="phone" placeholder="Phone" data-constraints="@Phone">
 									</div>
 
-									<div class="col-sm-12">
-										<textarea class="form-control" name="message" placeholder="What do you have in mind?" rows="8" data-constraints="@NotEmpty" required style="height: 184px;"></textarea>
+									<div class="col-md-12">
+										<textarea name="message" rows="5" placeholder="Tell me a little about your project" data-constraints="@NotEmpty"></textarea>
 									</div>
 
-									<div class="col-sm-12">
-										<div class="text-center m-t-20">
-											<button type="submit" 
-											class="btn form-btn" id="submit-button">Send</button>
-										</div>
+									<div class="col-md-12 text-center">
+										<button type="submit" class="btn btn_custom">Send Message</button>
 									</div>
-
+								</div>
 								</div>
 							</form>
 						</div>
