@@ -2413,9 +2413,10 @@ h1 li {
 
     .module-header h1.h1,
     .module-slides h1.h1 {
-        font-size: 25.6px;
+        font-size: 18.6px;
         text-align: center;
         padding-top: 40px;
+        letter-spacing: 18px;
     }
 
     .module-header h1.h2,
@@ -2460,11 +2461,13 @@ h1 li {
     .mobile-hero-display #mobile-logo {
         max-width: 375px;
     }
-
-    h1,
-    .h1 {
-        letter-spacing: 5px;
-        font-size: 20px;
+        .module-header h1.h1,
+        .module-slides h1.h1 {
+            font-size: 15.6px;
+            text-align: center;
+            padding-top: 40px;
+            letter-spacing: 15px;
+        }
     }
 
 }
