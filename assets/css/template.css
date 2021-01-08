@@ -476,8 +476,7 @@ pre {
 
 
 /*------------------------------------------------------------------
-[Let's Connect Form]
-*/
+[Let's Connect Form]*/
 
 #contact i:hover,
 #submit-button:hover,
@@ -2452,6 +2451,12 @@ h1 li {
         width: 100%;
         position: relative;
         top: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .mobile-hero-display #mobile-logo {
+        max-width: 375px;
     }
 }
 
