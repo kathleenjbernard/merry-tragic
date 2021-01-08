@@ -17,6 +17,8 @@ html {
 
 html {
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 html.modal-w {
@@ -54,7 +56,7 @@ img {
 }
 
 .bio-photo {
-    border: 5px solid #1a1a1a;
+    border: 3px solid #1a1a1a;
 }
 
 .bio-photo:hover {
@@ -2458,6 +2460,13 @@ h1 li {
     .mobile-hero-display #mobile-logo {
         max-width: 375px;
     }
+
+    h1,
+    .h1 {
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+
 }
 
 /*------------------------------------------------------------------
