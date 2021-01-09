@@ -17,8 +17,6 @@ html {
 
 html {
     height: 100%;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 html.modal-w {
@@ -34,7 +32,6 @@ body {
     color: white;
     -ms-overflow-style: scrollbar;
     overflow-x: hidden;
-    width: 100%;
     position: relative;
     height: 100%;
 }
@@ -56,7 +53,7 @@ img {
 }
 
 .bio-photo {
-    border: 3px solid #1a1a1a;
+    border: 5px solid #1a1a1a;
 }
 
 .bio-photo:hover {
@@ -478,7 +475,8 @@ pre {
 
 
 /*------------------------------------------------------------------
-[Let's Connect Form]*/
+[Let's Connect Form]
+*/
 
 #contact i:hover,
 #submit-button:hover,
@@ -568,90 +566,6 @@ select.form-control-sm:not([size]):not([multiple]) {
     margin: 0;
 }
 
-
-/*--------------new form styles--------------------*/
-.form-wrapper { /**centers form in middle of page**/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    padding-top: 50px;
-}
-
-.form-wrapper .form-row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-}
-
-.form-row1 {
-    display: flex;
-}
-
-.form-row1.form-field {
-    display: flex;
-}
-
-.form-row2 {
-    width: 100%;
-}
-
-.form-wrapper .form-row2 textarea {
-    display: flex;
-    width: 100%;
-}
-
-.form-field input {
-    display: flex;
-    padding: 0.5rem;
-    width: 100%;
-}
-
-.form-field ::placeholder {
-    color: gray;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    font-family: 'open sans';
-    letter-spacing: 1;
-    font-style: italic;
-}
-
-.form-wrapper .btn {
-    margin: 1rem;
-}
-
-@media (max-width: 768px) {
-    .form-wrapper .form-row1 {
-        flex-direction: column;
-    }
-
-    .form-field input {
-        width: 100%;
-    }
-
-    .form-wrapper { /**centers form in middle of page**/
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        padding-top: 50px;
-    }
-
-}
-
-@media (min-width: 769px) {
-    .form-field input {
-        width: 100%;
-    }
-}
-
-@media (min-width: 992px) {
-    .form-wrapper {
-        width: 50%;
-    }
-}
-
 /*------------------------------------------------------------------
 [Buttons]
 */
@@ -732,7 +646,6 @@ button {
 
 .btn.btn-brand:before {
     background: #e41919;
-    color: #fff;
 
 }
 
@@ -773,12 +686,6 @@ button {
 .btn.btn-gray.btn-outline:hover {
     border-color: #4c4c4c;
     color: #fff;
-}
-
-.btn-form {
-    background: transparent;
-    border: 3px solid #fff;
-    color: white;
 }
 
 .play-btn {
@@ -2413,10 +2320,9 @@ h1 li {
 
     .module-header h1.h1,
     .module-slides h1.h1 {
-        font-size: 18.6px;
+        font-size: 25.6px;
         text-align: center;
         padding-top: 40px;
-        letter-spacing: 18px;
     }
 
     .module-header h1.h2,
@@ -2453,23 +2359,8 @@ h1 li {
         display: block;
         width: 100%;
         position: relative;
-        top: 0;
+        top: -20pt;
     }
-}
-
-@media (max-width: 375px) {
-    .mobile-hero-display #mobile-logo {
-        max-width: 375px;
-    }
-        .module-header h1.h1,
-        .module-slides h1.h1 {
-            font-size: 15.6px;
-            text-align: center;
-            padding-top: 40px;
-            letter-spacing: 15px;
-        }
-    }
-
 }
 
 /*------------------------------------------------------------------
@@ -2696,14 +2587,6 @@ h1 li {
     padding-top: 20px;
     padding-bottom: 20px;
     text-transform: uppercase;
-}
-
-h6 a{
-    color: white;
-}
-
-h6 a:hover {
-    color:#0cb4ce;
 }
 
 /*------------------------------------------------------------------
@@ -3364,11 +3247,11 @@ a[rel~="gallery"]:hover {
 
 .footer {
     position: absolute;
+
     background: #1a1a1a; /*nicegray*/
     width: 100vw;
-    padding-top: 50px;
+    padding: 90px 0 40px;
     color: white;
-
 }
 
 .footer a {
