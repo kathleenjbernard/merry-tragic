@@ -393,6 +393,88 @@ pre {
     line-height: 1.8;
 }
 
+/*--------------new form styles--------------------*/
+.form-wrapper { /**centers form in middle of page**/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-top: 50px;
+}
+
+.form-wrapper .form-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.form-row1 {
+    display: flex;
+}
+
+.form-row1.form-field {
+    display: flex;
+}
+
+.form-row2 {
+    width: 100%;
+}
+
+.form-wrapper .form-row2 textarea {
+    display: flex;
+    width: 100%;
+}
+
+.form-field input {
+    display: flex;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-field ::placeholder {
+    color: gray;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-family: 'open sans';
+    letter-spacing: 1;
+    font-style: italic;
+}
+
+.form-wrapper .btn {
+    margin: 1rem;
+}
+
+@media (max-width: 768px) {
+    .form-wrapper .form-row1 {
+        flex-direction: column;
+    }
+
+    .form-field input {
+        width: 100%;
+    }
+
+    .form-wrapper { /**centers form in middle of page**/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .form-field input {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-wrapper {
+        width: 50%;
+    }
+}
 
 /*------------------------------------------------------------------
 [Progress Bars]
