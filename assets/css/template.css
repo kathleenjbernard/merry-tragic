@@ -258,8 +258,14 @@ h4 > a:focus,
 h5 > a:hover,
 h5 > a:focus,
 h6 > a:hover,
-h6 > a:focus,
+h6 > a:focus {
+    color: #FC313B;
+}
+
 #header-byline {
+    font-family: 'contrail one', cursive;
+    font-size: 75px;
+    font-weight: 200;
     color: #FC313B;
 }
 
