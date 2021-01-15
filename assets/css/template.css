@@ -274,11 +274,11 @@ h6 > a:focus,
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
 
     #hero-text-white {
-        font-size: 20px;
+        font-size: 25px;
         letter-spacing: 5px;
     }
 
@@ -2462,7 +2462,6 @@ h1 li {
         display: block;
         width: 100%;
         position: relative;
-        top: -20pt;
     }
 }
 
