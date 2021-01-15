@@ -275,7 +275,7 @@ h6 > a:focus,
 
     .mobile-hero-display #mobile-logo {
         display: block;
-        width: 100vw;
+        max-width: 375px;
         position: relative;
         top: -20pt;
     }
