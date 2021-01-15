@@ -464,6 +464,7 @@ pre {
 
 .form-wrapper .btn {
     margin: 1rem;
+    background-color: white;
 }
 
 @media (max-width: 768px) {
