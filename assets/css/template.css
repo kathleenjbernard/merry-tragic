@@ -272,7 +272,7 @@ h6 > a:focus,
         display: block;
         max-width: 375px;
         position: relative;
-        top: -20pt;
+        top: 0;
     }
 
     #hero-text-white {
