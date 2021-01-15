@@ -263,14 +263,9 @@ h6 > a:focus,
     color: #FC313B;
 }
 
-#header-byline {
-    font-size: 50px;
-    font-weight: 700;
-}
-
 @media (max-width: 375px) {
     #header-byline {
-        font-size: 35px;
+        display: none;
     }
 
     .mobile-hero-display #mobile-logo {
@@ -279,6 +274,12 @@ h6 > a:focus,
         position: relative;
         top: -20pt;
     }
+
+    #hero-text-white {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
     }
 
 
