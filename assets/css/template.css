@@ -3697,21 +3697,23 @@ a[rel~="gallery"]:hover {
         position: relative;
         bottom: 0;
         background-image: none;
-        max-width: 95vw;
-        padding-left: 0;
+        width: 100vw;
+       
         margin-left: 0;
         
     }
 
     #hero-text-white {
         text-align: center;
-        font-size: 13pt;
-        margin-left: 0;
+        font-size: 10pt;
+        margin-left: 10px;
+        margin-right: 10px;
         padding-left: 0;
     }
 
     #hero-button {
-        width: 100vw;
+        justify-self: center;
+        width: 250px;
     }
    
 }
@@ -3732,7 +3734,7 @@ a[rel~="gallery"]:hover {
         flex-direction: column;
         place-items: center;
         background-image: none;
-        width: 100%;
+        width: 100vw;
         
     }
 
