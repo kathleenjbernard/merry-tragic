@@ -3,6 +3,8 @@
 /*! -----------------------------------------------------------------
 [Master Stylesheet]
 
+
+
 ------------------------------------------------------------------
 [Basic]
 */
@@ -35,6 +37,40 @@ body {
     position: relative;
     height: 100%;
 }
+
+.module-header#home {
+    height: 100vh;
+    background-size: contain;
+}
+
+#merry-tragic-letters img {
+    display: block;
+    width: 400px;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#hero-text-white {
+    display: block;
+    font-size: 20pt;
+    letter-spacing: 5px;
+}
+
+#hero-text-wrapper {
+    display: block;
+    padding: 15px;
+    margin-top: 50px;
+    background-image: linear-gradient(to right, red, rgba(255, 0, 0, 0.247), transparent);
+    z-index: 2000;
+}
+
+#hero-button-text {
+    font-size: inherit;
+}
+
 
 #profile { /**intro**/
     background-color: #28B6C3; /*footer bylines*/
@@ -262,28 +298,6 @@ h6 > a:focus,
 #header-byline {
     color: #FC313B;
 }
-
-@media (max-width: 375px) {
-    #header-byline {
-        display: none;
-    }
-
-    .mobile-hero-display #mobile-logo {
-        display: block;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        margin-top: 5vh;
-    }
-
-    #hero-text-white {
-        font-size: 25px;
-        letter-spacing: 5px;
-    }
-
-    }
-
 
 p,
 pre,
@@ -1949,7 +1963,6 @@ h6.starting-at {
         padding: 0;
     }
 
-
     .header .container,
     .header .container-fluid {
         padding-left: 25px;
@@ -2313,10 +2326,6 @@ h1 li {
     font-size: 15px;
 }
 
-.mobile-hero-display #mobile-logo {
-    display: none;
-}
-
 @media (max-width: 992px) {
     .wrapper {
         padding-top: 80px;
@@ -2413,7 +2422,6 @@ h1 li {
 
 @media (max-width: 568px) {
 
-    .hero-indicator,
     .module-header h3 {
         display: none;
     }
@@ -2459,11 +2467,6 @@ h1 li {
         font-size: 12px;
     }
 
-    .mobile-hero-display #mobile-logo {
-        display: block;
-        width: 100%;
-        position: relative;
-    }
 }
 
 /*------------------------------------------------------------------
@@ -3674,5 +3677,68 @@ a[rel~="gallery"]:hover {
     .footer ul,
     #footer-logo {
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 0px) {
+    #merry-tragic-letters img {
+        width: 95vw;
+        padding-top: 15vh;
+    }
+
+    #hero-text-white {
+        font-size: 15pt;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+
+    #merry-tragic-letters img {
+        display: block;
+        width: 90vw;
+        max-width: 95vw;
+        padding-top: 15vh;
+    }
+
+    #hero-button-text {
+        font-size: 14pt;
+        display: block;
+        position: relative;
+        bottom: -20;
+    }
+
+    #hero-text-wrapper {
+        background-image: none;
+        padding-bottom: 40px;
+    }
+
+    .hero-indicator {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 376px) {
+    #merry-tragic-letters img {
+        display: block;
+        width: 90vw;
+        max-width: 95vw;
+        padding-top: 20vh;
+    }
+
+}
+
+@media only screen and (max-width: 990px) and (min-width: 768px) {
+    #merry-tragic-letters img {
+        width: 75vw;
+        max-width: 95vw;
+        padding-top: 15vh;
+    }
+}
+
+@media (min-width: 991px) {
+    #merry-tragic-letters img {
+        width: 70vw;
+        max-width: 1000px;
+        padding-top: 10vh;
     }
 }
