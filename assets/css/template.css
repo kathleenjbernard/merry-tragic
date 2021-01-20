@@ -1620,6 +1620,7 @@ h6.starting-at {
 .header {
     background-color: transparent;
     position: fixed;
+    top: 0;
     z-index: 1040;
     height: 80px;
     width: 100%;
@@ -1663,6 +1664,7 @@ h6.starting-at {
 .header .container-fluid {
     position: relative;
     height: 100%;
+    top: 0;
 }
 
 .extra-nav::before,
