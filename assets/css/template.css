@@ -3690,6 +3690,29 @@ a[rel~="gallery"]:hover {
         padding-top: 15vh;
     }
 
+    #hero-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        position: relative;
+        bottom: 0;
+        background-image: none;
+        max-width: 95vw;
+        padding-left: 0;
+        margin-left: 0;
+        
+    }
+
+    #hero-text-white {
+        text-align: center;
+        font-size: 13pt;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #hero-button {
+        width: 100vw;
+    }
    
 }
 
@@ -3700,6 +3723,8 @@ a[rel~="gallery"]:hover {
         display: block;
         position: relative;
         bottom: -20;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #hero-text-wrapper {
@@ -3707,8 +3732,7 @@ a[rel~="gallery"]:hover {
         flex-direction: column;
         place-items: center;
         background-image: none;
-        padding-bottom: 40px;
-        max-width: 95vw;
+        width: 100%;
         
     }
 
