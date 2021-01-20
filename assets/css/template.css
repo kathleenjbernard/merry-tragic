@@ -61,8 +61,8 @@ body {
 
 #hero-text-wrapper {
     display: block;
-    position: fixed;
-    bottom: 10vh;
+    position: relative;
+    bottom: 10px;
     padding: 15px;
     margin-top: 50px;
     background-image: linear-gradient(to right, #FC313B, transparent 80%);
@@ -3690,14 +3690,10 @@ a[rel~="gallery"]:hover {
         padding-top: 15vh;
     }
 
-    #hero-text-white {
-        font-size: 15pt;
-    }
+   
 }
 
 @media only screen and (max-width: 767px) and (min-width: 0px) {
-
-    
 
     #hero-button-text {
         font-size: 14pt;
@@ -3707,8 +3703,13 @@ a[rel~="gallery"]:hover {
     }
 
     #hero-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
         background-image: none;
         padding-bottom: 40px;
+        max-width: 95vw;
+        
     }
 
     .hero-indicator {
